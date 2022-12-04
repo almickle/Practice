@@ -1,4 +1,4 @@
-fetch("https://raw.githubusercontent.com/almickle/Graphics/main/ref/teapot.txt", {
+fetch("https://raw.githubusercontent.com/", {
     method: "OPTIONS"
 })
 .then((resp) => console.log(resp))
