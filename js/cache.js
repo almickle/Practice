@@ -12,11 +12,11 @@ fetch("https://api.ncbi.nlm.nih.gov/datasets/v2alpha/gene/symbol/BRCA2/taxon/hum
 .then((resp) => console.log(resp))
 .catch()
 
-fetch("https://api.ncbi.nlm.nih.gov/datasets/v2alpha/gene/symbol/BRCA2/taxon/human")
+fetch("https://api.ncbi.nlm.nih.gov/datasets/v1/gene/symbol/BRCA2/taxon/human")
 .then((resp) => resp.json())
 .then((data) => console.log(data))
 
-fetch("https://api.ncbi.nlm.nih.gov/datasets/v2alpha/gene/symbol/BRCA2/taxon/human", {
+fetch("https://api.ncbi.nlm.nih.gov/datasets/v1/gene/symbol/BRCA2/taxon/human", {
     method: "HEAD"
 })
 .then((resp) => console.log(resp))
