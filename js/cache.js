@@ -11,4 +11,6 @@ fetch("https://api.ncbi.nlm.nih.gov/datasets/v2alpha/gene/symbol/BRCA2/taxon/hum
 })
 .then((resp) => console.log(resp))
 
-console.log('updated')
+fetch("https://api.ncbi.nlm.nih.gov/datasets/v2alpha/gene/symbol/BRCA2/taxon/human")
+.then((resp) => resp.json())
+.then((data) => console.log(data))
