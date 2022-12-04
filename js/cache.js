@@ -1,4 +1,4 @@
-fetch("https://raw.githubusercontent.com/", {
+fetch("https://api.ncbi.nlm.nih.gov/datasets/v2alpha", {
     method: "OPTIONS"
 })
 .then((resp) => console.log(resp))
