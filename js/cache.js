@@ -10,6 +10,7 @@ fetch("https://api.ncbi.nlm.nih.gov/datasets/v2alpha/gene/symbol/BRCA2/taxon/hum
     headers: headers
 })
 .then((resp) => console.log(resp))
+.catch()
 
 fetch("https://api.ncbi.nlm.nih.gov/datasets/v2alpha/gene/symbol/BRCA2/taxon/human")
 .then((resp) => resp.json())
