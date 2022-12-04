@@ -5,7 +5,7 @@ const headers = {
     "Access-Control-Request-Headers": "Content-Length"
 }
 
-fetch("https://api.ncbi.nlm.nih.gov/datasets/v2alpha", {
+fetch("https://api.ncbi.nlm.nih.gov/datasets/v2alpha/gene/symbol/BRCA2/taxon/human", {
     method: "OPTIONS",
     headers: headers
 })
