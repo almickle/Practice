@@ -20,3 +20,8 @@ fetch("https://api.ncbi.nlm.nih.gov/datasets/v1/gene/symbol/BRCA2/taxon/human", 
     method: "HEAD"
 })
 .then((resp) => console.log(resp))
+
+fetch("https://api.ncbi.nlm.nih.gov/datasets/v1/gene/symbol/BRCA2/taxon/human", {
+    method: "POST"
+})
+.then((resp) => console.log(resp))
