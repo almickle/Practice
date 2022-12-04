@@ -1,5 +1,5 @@
 const headers = {
-    "Host": "https://api.ncbi.nlm.nih.gov/datasets/v2alpha/gene/symbol/BRCA2/taxon/human",
+    "Host": "https://api.ncbi.nlm.nih.gov/datasets/v2alpha/genome/accession/GCF_000001405.40/download",
     "Origin": "https://almickle.github.io/Practice/",
     "Access-Control-Request-Method": "HEAD",
     "Access-Control-Request-Headers": "Content-Length"
@@ -12,16 +12,11 @@ fetch("https://api.ncbi.nlm.nih.gov/datasets/v2alpha/gene/symbol/BRCA2/taxon/hum
 .then((resp) => console.log(resp))
 .catch()
 
-fetch("https://api.ncbi.nlm.nih.gov/datasets/v1/gene/symbol/BRCA2/taxon/human")
+fetch("https://api.ncbi.nlm.nih.gov/datasets/v2alpha/gene/symbol/BRCA2/taxon/human")
 .then((resp) => resp.json())
 .then((data) => console.log(data))
 
-fetch("https://api.ncbi.nlm.nih.gov/datasets/v1/gene/symbol/BRCA2/taxon/human", {
+fetch("https://api.ncbi.nlm.nih.gov/datasets/v2alpha/genome/accession/GCF_000001405.40/download", {
     method: "HEAD"
-})
-.then((resp) => console.log(resp))
-
-fetch("https://api.ncbi.nlm.nih.gov/datasets/v1/gene/symbol/BRCA2/taxon/human", {
-    method: "POST"
 })
 .then((resp) => console.log(resp))
