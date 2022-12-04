@@ -1,0 +1,32 @@
+div#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+div#one {
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+    background-color: aqua;
+}
+
+div#two {
+    width: 200px;
+    height: 160px;
+    margin: 30px;
+    background-color: rebeccapurple;
+}
+
+div#three {
+    width: 200px;
+    height: 80px;
+    margin: 30px;
+    background-color: royalblue;
+}
+
+div#four {
+    width: 200px;
+    height: 120px;
+    margin: 30px;
+    background-color: paleturquoise;
+}
