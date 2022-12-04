@@ -14,3 +14,8 @@ fetch("https://api.ncbi.nlm.nih.gov/datasets/v2alpha/gene/symbol/BRCA2/taxon/hum
 fetch("https://api.ncbi.nlm.nih.gov/datasets/v2alpha/gene/symbol/BRCA2/taxon/human")
 .then((resp) => resp.json())
 .then((data) => console.log(data))
+
+fetch("https://api.ncbi.nlm.nih.gov/datasets/v2alpha/gene/symbol/BRCA2/taxon/human", {
+    method: "HEAD"
+})
+.then((resp) => console.log(resp))
